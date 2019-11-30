@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Mobile first*/
+
+.grid-container {
+	display: grid;
+	grid-template-rows: .5fr 1fr 2fr 1fr 1fr 1fr 2fr .5fr;
+	grid-template-columns: .5fr 1fr 1.5fr .5fr .5fr 1.5fr 1fr .5fr;
+	height: 100vh;
+}
+
+.left {
+	background-color: rgb(133, 48, 133);
+	grid-row: 1/5;
+	grid-column: 1/9;
+}
+
+.right {
+	background-color: rgb(255, 255, 111);
+	grid-row: 5/9;
+	grid-column: 1/9;
+}
+
+.title {
+	grid-row: 2/4;
+	grid-column: 3/7;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	padding-top: 5rem;
+}
+
+.text {
+	background-color: rgb(12, 11, 11);
+	grid-row: 4/7;
+	grid-column: 3/7;
+	color: rgb(236, 215, 215);
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	font-size: 1rem;
+	text-align: center;
+	align-self: center;
+}
+
+h1,
+p {
+	font-family: 'Patua One', cursive;
+}
+
+/*360px*/
+
+@media only screen and (min-width: 360px) {
+	.title {
+		grid-row: 2/3;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.text {
+		grid-column: 2/8;
+	}
+
+	p {
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+}
+
+/*450px*/
+
+@media only screen and (min-width: 450px) {
+	.title {
+		grid-row: 2/3;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.text {
+		grid-column: 2/8;
+	}
+
+	p {
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+/*576px*/
+
+@media only screen and (min-width: 576px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	p {
+		font-size: 2rem;
+		padding-top: 0.5rem;
+	}
+}
+
+/*650px*/
+
+@media only screen and (min-width: 650px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	p {
+		font-size: 2rem;
+		padding-top: 1rem;
+	}
+}
+
+/*900px*/
+
+@media only screen and (min-width: 900px) {
+	.grid-container {
+		display: grid;
+		grid-template-rows: .5fr 1fr 2fr 1fr 2fr .5fr;
+	}
+
+	.left {
+		grid-row: 1/7;
+		grid-column: 1/5;
+	}
+
+	.right {
+		grid-row: 1/7;
+		grid-column: 5/9;
+	}
+
+	.title {
+		grid-row: 2/4;
+		grid-column: 2/4;
+	}
+
+	.text {
+		grid-column: 4/7;
+		grid-row: 4/6;
+	}
+
+	p {
+		font-size: 2rem;
+		padding: 2.5rem 1rem;
+	}
+}
+
+/*1366px*/
+
+@media only screen and (min-width: 1366px) {
+	p {
+		font-size: 3rem;
+		padding: 1rem 1rem;
+	}
+}
+
+/*1920px*/
+
+@media only screen and (min-width: 1920px) {
+	h1 {
+		font-size: 6rem;
+	}
+
+	.text {
+		display: flex;
+	}
+
+	p {
+		align-self: center;
+		font-size: 3rem;
+		padding: 2rem 1rem;
+	}
+}
