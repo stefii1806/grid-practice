@@ -174,12 +174,7 @@ p {
 		font-size: 6rem;
 	}
 
-	.text {
-		display: flex;
-	}
-
 	p {
-		align-self: center;
 		font-size: 3rem;
 		padding: 2rem 1rem;
 	}
